@@ -1,6 +1,7 @@
 export type Translations = {
   nav: {
     about: string;
+    experience: string;
     skills: string;
     projects: string;
     contact: string;
@@ -57,6 +58,16 @@ export type Translations = {
       error: string;
     };
   };
+  experience: {
+    title: string;
+    jobs: {
+      role: string;
+      company: string;
+      period: string;
+      bullets: string[];
+      stack: string[];
+    }[];
+  };
   footer: {
     rights: string;
   };
@@ -65,6 +76,7 @@ export type Translations = {
 export const en: Translations = {
   nav: {
     about: "About",
+    experience: "Experience",
     skills: "Skills",
     projects: "Projects",
     contact: "Contact",
@@ -133,6 +145,52 @@ export const en: Translations = {
       success: "Message sent! I'll get back to you soon.",
       error: "Something went wrong. Please try again.",
     },
+  },
+  experience: {
+    title: "Experience",
+    jobs: [
+      {
+        role: "Full-Stack Developer",
+        company: "Galileo Financial Technologies",
+        period: "Oct 2022 – Present",
+        bullets: [
+          "Reduced customer wait times at Banco Agrícola (El Salvador) by developing new features for the bank's web application — employees can now contract services and open savings accounts in just a few steps.",
+          "Decreased banking transaction times for multiple Ecuadorian companies by building a virtual banking app for Banco Bolivariano, enabling efficient management of payroll, transfers, and credit card payments.",
+          "Currently contributing to SoFi's platform as part of an internal transfer within Galileo Financial Technologies.",
+        ],
+        stack: ["React", "TypeScript", "Redux", "Java", "Spring Boot", "PostgreSQL", "MSSQL", "Docker"],
+      },
+      {
+        role: "Middle Developer",
+        company: "Jardines de Esperanza",
+        period: "Nov 2018 – Oct 2022",
+        bullets: [
+          "Increased home sales by 20% by building a mobile app that lets salespeople calculate client payments and print receipts via Bluetooth thermal printer.",
+          "Improved task tracking efficiency by 35% by creating a web app for team leaders to assign and monitor tasks.",
+          "Reduced printer acquisition costs by 60% by adapting an existing mobile app to support generic printers instead of Zebra printers.",
+        ],
+        stack: ["React", "React Native", "TypeScript", "Java", "Spring Boot", "ASP.NET", "MSSQL"],
+      },
+      {
+        role: "Junior Developer",
+        company: "Carvajal Consultants",
+        period: "Apr 2015 – Oct 2018",
+        bullets: [
+          "Increased shrimp larvae monitoring efficiency by 50% by building web and mobile apps that remind workers to take measurements and allow the CEO to generate reports.",
+          "Reduced communication delays between patients and doctors by 30% with a mobile app for video messages and video calls.",
+        ],
+        stack: ["React", "React Native", "TypeScript", "Java", "Spring Boot", "PostgreSQL", "iOS", "Android"],
+      },
+      {
+        role: "Trainee Developer",
+        company: "Escuela Superior Politécnica del Litoral",
+        period: "May 2014 – Mar 2015",
+        bullets: [
+          "Streamlined the university document approval process by 30% by creating a web app for students to submit graduation forms for online approval by tutors.",
+        ],
+        stack: ["PHP", "Laravel", "MySQL"],
+      },
+    ],
   },
   footer: {
     rights: "© 2026 Jose Romero",
