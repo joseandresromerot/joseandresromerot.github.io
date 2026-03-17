@@ -204,7 +204,7 @@ export const Projects = () => {
   const { t } = useTranslation();
 
   return (
-    <section id="projects" className="py-20 sm:py-28">
+    <section id="projects" className="py-20 sm:py-28 bg-[#18181b]/40">
       <div className="max-w-6xl mx-auto px-8 sm:px-12 lg:px-20">
         <motion.div
           variants={sectionVariants}

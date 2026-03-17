@@ -73,7 +73,7 @@ export const Skills = () => {
   return (
     <section
       id="skills"
-      className="py-20 sm:py-28 bg-[#18181b]/40"
+      className="py-20 sm:py-28"
     >
       <div className="max-w-6xl mx-auto px-8 sm:px-12 lg:px-20">
         <motion.div
