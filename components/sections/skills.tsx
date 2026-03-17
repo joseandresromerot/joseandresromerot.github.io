@@ -54,15 +54,15 @@ export const Skills = () => {
   const skillGroups: SkillGroup[] = [
     {
       category: t.skills.categories.frontend,
-      skills: ["React", "JavaScript", "TypeScript", "Tailwind CSS"],
+      skills: ["React", "React Native", "Next.js", "JavaScript", "TypeScript", "Tailwind CSS", "SASS"],
     },
     {
       category: t.skills.categories.backend,
-      skills: ["Java", "Spring Boot", "Node.js", "Fastify"],
+      skills: ["Java", "Spring Boot", "Node.js", "Fastify", "Express.js", "GraphQL"],
     },
     {
       category: t.skills.categories.database,
-      skills: ["PostgreSQL"],
+      skills: ["PostgreSQL", "MySQL", "Microsoft SQL Server"],
     },
     {
       category: t.skills.categories.devops,
