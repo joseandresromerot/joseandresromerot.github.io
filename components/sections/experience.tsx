@@ -92,8 +92,8 @@ export const Experience = () => {
                 {/* Bullets */}
                 <ul className="space-y-2 mb-4">
                   {job.bullets.map((bullet, i) => (
-                    <li key={i} className="flex gap-2 text-[#a1a1aa] text-sm leading-relaxed">
-                      <span className="text-accent mt-1 shrink-0">▸</span>
+                    <li key={i} className="flex items-baseline gap-2 text-[#a1a1aa] text-sm leading-relaxed">
+                      <span className="text-accent shrink-0">▸</span>
                       {bullet}
                     </li>
                   ))}

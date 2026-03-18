@@ -40,6 +40,7 @@ export type Translations = {
     liveDemo: string;
     github: string;
     items: {
+      devassets: { name: string; description: string };
       taskflow: { name: string; description: string };
       codevault: { name: string; description: string };
     };
@@ -119,6 +120,11 @@ export const en: Translations = {
     liveDemo: "Live Demo",
     github: "GitHub",
     items: {
+      devassets: {
+        name: "DevAssets",
+        description:
+          "A digital marketplace for developers to buy premium assets — templates, UI kits, and icon packs. Features Google OAuth, a server-side cart, and Stripe Checkout.",
+      },
       taskflow: {
         name: "Taskflow",
         description:

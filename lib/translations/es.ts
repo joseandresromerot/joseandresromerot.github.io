@@ -46,6 +46,11 @@ export const es: Translations = {
     liveDemo: "Ver Demo",
     github: "GitHub",
     items: {
+      devassets: {
+        name: "DevAssets",
+        description:
+          "Un marketplace digital para developers donde comprar assets premium — templates, UI kits y packs de íconos. Incluye Google OAuth, carrito server-side y Stripe Checkout.",
+      },
       taskflow: {
         name: "Taskflow",
         description:

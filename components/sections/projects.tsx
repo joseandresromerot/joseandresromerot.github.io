@@ -64,7 +64,7 @@ const cardItemVariants = {
 };
 
 type Project = {
-  key: "taskflow" | "codevault";
+  key: "devassets" | "taskflow" | "codevault";
   image: string;
   gradient: string;
   stack: string[];
@@ -74,10 +74,18 @@ type Project = {
 
 const projects: Project[] = [
   {
+    key: "devassets",
+    image: "/projects/devassets.png",
+    gradient: "from-indigo-600/20 via-violet-500/10 to-purple-600/20",
+    stack: ["Next.js", "Node.js", "Fastify", "Stripe", "PostgreSQL", "Prisma", "Vitest", "Playwright", "GitHub Actions"],
+    liveUrl: "https://devassets-web.vercel.app",
+    githubUrl: "https://github.com/joseandresromerot/devassets",
+  },
+  {
     key: "taskflow",
     image: "/projects/taskflow.png",
     gradient: "from-violet-600/20 via-purple-500/10 to-indigo-600/20",
-    stack: ["Next.js", "Node.js", "Fastify", "PostgreSQL", "Prisma"],
+    stack: ["Next.js", "Node.js", "Fastify", "PostgreSQL", "Prisma", "Vitest", "Playwright", "GitHub Actions"],
     liveUrl: "https://taskflow-web-iota.vercel.app",
     githubUrl: "https://github.com/joseandresromerot/taskflow",
   },
@@ -85,7 +93,7 @@ const projects: Project[] = [
     key: "codevault",
     image: "/projects/codevault.png",
     gradient: "from-emerald-600/20 via-teal-500/10 to-cyan-600/20",
-    stack: ["Next.js", "Node.js", "GraphQL", "PostgreSQL", "Prisma"],
+    stack: ["Next.js", "Node.js", "GraphQL", "PostgreSQL", "Prisma", "Vitest", "Playwright", "GitHub Actions"],
     liveUrl: "https://codevault-neon.vercel.app",
     githubUrl: "https://github.com/joseandresromerot/codevault",
   },
@@ -226,7 +234,7 @@ export const Projects = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-60px" }}
-            className="grid sm:grid-cols-2 gap-6 lg:gap-8 max-w-4xl"
+            className="grid sm:grid-cols-2 gap-6 lg:gap-8"
           >
             {projects.map((project) => (
               <ProjectCard
